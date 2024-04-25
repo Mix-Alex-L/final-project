@@ -1,0 +1,1817 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.center {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.open {
+  display: flex !important;
+}
+.main-slider * {
+  z-index: 4;
+}
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+/*container-first*/
+.container-first {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.btn-catalog {
+  position: relative;
+  z-index: 3;
+}
+.content {
+  position: relative;
+  z-index: 3;
+}
+
+.horizontal-line {
+  position: relative;
+}
+.brand {
+  position: relative;
+}
+.container-first .main-slider {
+  height: 950px;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.87) url(../Images/slide1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container-first .main-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 950px;
+  background: rgba(51, 51, 51, 0.87);
+}
+/*header*/
+.container-first header {
+  padding-top: 25px;
+}
+.container-first header .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  margin-bottom: 523px;
+}
+
+/*перенос */
+.container-first header .nav-content .burger {
+  display: none;
+  position: relative;
+  left: 8%;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.container-first header .nav-content .burger span {
+  height: 4px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #fff;
+}
+.container-first header .nav-content .burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+.container-first header .nav-content .burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.container-first header .nav-content .burger.active span {
+  transform: scale(0);
+}
+.container-first header .nav-content .burger::before {
+  top: 0;
+}
+.container-first header .nav-content .burger::after {
+  bottom: 0;
+}
+.container-first header .nav-content .burger::before,
+.container-first header .nav-content .burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+.container-first header .nav-content .right-side .right-elements .hidden-menu {
+  display: none;
+}
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .hidden-menu
+  ul
+  li {
+  margin-bottom: 10%;
+}
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .hidden-menu
+  ul
+  li
+  img {
+  margin-right: 5px;
+}
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .hidden-menu
+  ul
+  li
+  a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .heart-user
+  .heart {
+  margin-right: 25px;
+}
+.container-first header .nav-content nav ul {
+  display: flex;
+  width: 321px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.container-first header .nav-content nav ul li a {
+  font-family: "Gilroy", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+}
+.container-first header .nav-content .logo {
+  margin-left: 2%;
+}
+.container-first header .nav-content .right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-first header .nav-content .right-side .right-elements {
+  width: 348px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gilroy", sans-serif;
+}
+
+.container-first header .nav-content .right-side .right-elements .search-bar {
+  position: relative;
+  border: none;
+}
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .search-bar
+  input {
+  color: #fff;
+  width: 78px;
+  height: 24px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+  background: transparent;
+  border: none;
+}
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .search-bar
+  input::-webkit-input-placeholder {
+  color: #fff;
+  border: none;
+}
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .search-bar
+  input::-moz-placeholder {
+  color: #fff;
+}
+.container-first
+  header
+  .nav-content
+  .right-side
+  .right-elements
+  .search-bar
+  span {
+  position: absolute;
+  left: 0%;
+}
+.container-first header .nav-content .right-side .right-elements .login a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+  color: #fff;
+  text-decoration: none;
+}
+.container-first header .nav-content .right-side .right-elements .heart-user {
+  display: flex;
+  align-items: center;
+}
+.container-first .content {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.container-first .content h1 {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+.container-first .btn-catalog {
+  margin-bottom: 80px;
+  text-decoration: none;
+  text-align: center;
+}
+.container-first .btn-catalog .btn {
+  border: 1px solid #fff;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  color: #fff;
+  padding: 15px 35px;
+  background: #333;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.8s;
+  letter-spacing: 0.1em;
+}
+.container-first .horizontal-line {
+  margin-bottom: 30px;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 0px;
+}
+.container-first .brand {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.container-first .brand .brand-item1,
+.container-first .brand .brand-item2,
+.container-first .brand .brand-item3,
+.container-first .brand .brand-item4,
+.container-first .brand .brand-item5,
+.container-first .brand .brand-item6,
+.container-first .brand .brand-item7,
+.container-first .brand .brand-item8 {
+  width: 175px;
+  height: 60px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-color: #fff;
+  width: 100%;
+}
+/*container-second*/
+.container-second {
+  width: 100%;
+  margin-bottom: 121px;
+}
+.navigation-catalog {
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 51px;
+}
+.navigation-catalog .home a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #333;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.navigation-catalog .catalog p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #333;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.container-second .Events {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+.container-second .beauty-here {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.container-second .beauty-here h3 {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #333;
+}
+.container-second .section-selection-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+.container-second .section-selection-btn .Wedding,
+.container-second .section-selection-btn .husband,
+.container-second .section-selection-btn .wife,
+.container-second .section-selection-btn .partner,
+.container-second .section-selection-btn .collections,
+.container-second .section-selection-btn .rarity {
+  width: 171px;
+  padding-bottom: 55px;
+}
+
+.container-second .section-selection-btn .Wedding a {
+  padding: 20px 36px;
+}
+.container-second .section-selection-btn .husband a {
+  padding: 20px 54px;
+}
+.container-second .section-selection-btn .wife a {
+  padding: 20px 56px;
+}
+.container-second .section-selection-btn .partner a {
+  padding: 20px 33px;
+}
+.container-second .section-selection-btn .collections a {
+  padding: 20px 23px;
+}
+.container-second .section-selection-btn .rarity a {
+  padding: 20px 32px;
+}
+.container-second .section-selection-btn .Wedding a,
+.container-second .section-selection-btn .husband a,
+.container-second .section-selection-btn .wife a,
+.container-second .section-selection-btn .partner a,
+.container-second .section-selection-btn .collections a,
+.container-second .section-selection-btn .rarity a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #d6d6d6;
+  transition: 0.8s;
+}
+.container-second .section-selection-btn .Wedding a:hover,
+.container-second .section-selection-btn .husband a:hover,
+.container-second .section-selection-btn .wife a:hover,
+.container-second .section-selection-btn .partner a:hover,
+.container-second .section-selection-btn .collections a:hover,
+.container-second .section-selection-btn .rarity a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.container-second .decorations {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2%;
+  row-gap: 4%;
+}
+.container-second .decorations .rings,
+.container-second .decorations .earrings,
+.container-second .decorations .pendants,
+.container-second .decorations .cufflinks,
+.container-second .decorations .bracelets,
+.container-second .decorations .watch {
+  width: 100%;
+  max-width: 100%;
+  width: 350px;
+  height: 280px;
+  position: relative;
+  background-color: #333;
+}
+.container-second .decorations .rings a,
+.container-second .decorations .earrings a,
+.container-second .decorations .pendants a,
+.container-second .decorations .cufflinks a,
+.container-second .decorations .bracelets a,
+.container-second .decorations .watch a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+.container-second .decorations .rings img,
+.container-second .decorations .earrings img,
+.container-second .decorations .pendants img,
+.container-second .decorations .cufflinks img,
+.container-second .decorations .bracelets img,
+.container-second .decorations .watch img {
+  width: 100%;
+  max-width: 100%;
+  opacity: 0.7;
+}
+.container-second .decorations .rings img:hover,
+.container-second .decorations .earrings img:hover,
+.container-second .decorations .pendants img:hover,
+.container-second .decorations .cufflinks img:hover,
+.container-second .decorations .bracelets img:hover,
+.container-second .decorations .watch img:hover {
+  opacity: 1;
+  transition: 0.8s;
+}
+/*container-salons*/
+.salons {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 117px;
+}
+.salons .content {
+  background: url(../Images/our-salon.svg);
+  max-width: 1920px;
+  width: 100%;
+}
+
+.salons .content .top-content {
+  padding-top: 97px;
+  padding-bottom: 15px;
+}
+.salons .content .top-content p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+}
+.salons .content .center-content {
+  padding-bottom: 45px;
+}
+.salons .content .center-content h5 {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.salons .content .bottom-content {
+  width: 62%;
+  padding-bottom: 60px;
+  margin: 0 auto 0 auto;
+}
+.salons .content .bottom-content p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+}
+.salons .content .transition {
+  padding-bottom: 103px;
+}
+.salons .content .transition button {
+  width: 224px;
+  height: 51px;
+  background: #fff;
+  margin: 0 auto;
+  display: block;
+}
+.salons .content button a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+/*container-adviсe*/
+.adviсe {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+}
+.adviсe .Useful-articles {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+.adviсe .best-tips {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 60px;
+}
+.adviсe .adviсe-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.adviсe .adviсe-card .watch,
+.adviсe .adviсe-card .cufflinks,
+.adviсe .adviсe-card .rings {
+  width: 350px;
+  position: relative;
+  background-color: #333;
+}
+.adviсe .adviсe-card .watch img,
+.adviсe .adviсe-card .cufflinks img,
+.adviсe .adviсe-card .rings img {
+  width: 100%;
+  opacity: 0.7;
+}
+.adviсe .adviсe-card .watch img:hover,
+.adviсe .adviсe-card .cufflinks img:hover,
+.adviсe .adviсe-card .rings img:hover {
+  opacity: 1;
+}
+.adviсe .adviсe-card .watch a {
+  width: 154px;
+  height: 87px;
+}
+.adviсe .adviсe-card .cufflinks a {
+  width: 204px;
+  height: 87px;
+}
+.adviсe .adviсe-card .rings a {
+  width: 206px;
+  height: 87px;
+}
+.adviсe .adviсe-card .watch a,
+.adviсe .adviсe-card .cufflinks a,
+.adviсe .adviсe-card .rings a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.adviсe .adviсe-btn {
+  margin-bottom: 120px;
+}
+.adviсe .adviсe-btn button {
+  border: 1px solid #fff;
+
+  width: 255px;
+  height: 51px;
+  background: #333;
+  position: absolute;
+  top: 107%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.adviсe .adviсe-btn button a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+/*social-networks*/
+.social-networks {
+  margin-top: 270px;
+  margin-bottom: 150px;
+}
+
+.social-networks .social .ojjo-jewerly {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.social-networks .social .ojjo-jewerly a {
+  font-family: "Gilroy", sans-seri;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+.social-networks .social .networks {
+  font-family: "Gilroy", sans-seri;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.social-networks .social .funny-pictures {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: center;
+}
+
+.social-networks .social .funny-pictures .pictures1 {
+  width: 100%;
+  height: 300px;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.social-networks .social .funny-pictures .pictures2 {
+  width: 100%;
+  height: 300px;
+}
+.social-networks .social .funny-pictures .pictures3 {
+  width: 100%;
+  height: 300px;
+}
+.social-networks .social .funny-pictures .pictures4 {
+  width: 100%;
+  height: 300px;
+  grid-column: 1;
+  grid-row: 2;
+}
+.social-networks .social .funny-pictures .pictures5 {
+  width: 100%;
+  height: 300px;
+  grid-column: 2;
+  grid-row: 2;
+}
+.social-networks .social .funny-pictures .pictures6 {
+  width: 100%;
+  height: 300px;
+  grid-column: 3 / span 4;
+  grid-row: 2;
+}
+
+.social-networks .social .funny-pictures .pictures1 img,
+.social-networks .social .funny-pictures .pictures2 img,
+.social-networks .social .funny-pictures .pictures3 img,
+.social-networks .social .funny-pictures .pictures4 img,
+.social-networks .social .funny-pictures .pictures5 img,
+.social-networks .social .funny-pictures .pictures6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* !!!!!!!!second page !!!!!!!!!   */
+
+/*dropdown-menu-block*/
+.dropdown-menu-block {
+  width: 100%;
+
+  padding-top: 100px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown-menu-block .dropbtn {
+  width: 160px;
+  height: 34px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  background-color: #f9f9f9;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d6d6d6;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+.dropdown-menu-block .dropdown {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+}
+.dropdown-menu-block .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+.dropdown-menu-block .dropdown .dropdown-content a {
+  width: 160px;
+  background-color: #f9f9f9;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu-block .dropdown .dropdown-content a:hover {
+  background-color: #fff;
+}
+.dropdown-menu-block .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-menu-block .dropdown:hover .dropbtn {
+  background-color: #fff;
+}
+/*jewelry-pendant*/
+.jewelry-pendant .top-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-items: center;
+  column-gap: 3%;
+  padding-bottom: 60px;
+  padding-top: 95px;
+}
+.jewelry-pendant .top-part .presentation1,
+.jewelry-pendant .top-part .presentation2,
+.jewelry-pendant .top-part .presentation3 {
+  margin-bottom: 5%;
+}
+.jewelry-pendant .top-part .presentation1 a,
+.jewelry-pendant .top-part .presentation2 a,
+.jewelry-pendant .top-part .presentation3 a {
+  text-decoration: none;
+  width: 100%;
+  width: 350px;
+  height: 439px;
+}
+.jewelry-pendant .top-part .presentation1 img,
+.jewelry-pendant .top-part .presentation2 img,
+.jewelry-pendant .top-part .presentation3 img {
+  width: 100%;
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
+  padding-bottom: 25px;
+}
+.jewelry-pendant .top-part .presentation1 p,
+.jewelry-pendant .top-part .presentation2 p,
+.jewelry-pendant .top-part .presentation3 p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #333;
+  padding-bottom: 10px;
+}
+.jewelry-pendant .top-part .presentation1 h5,
+.jewelry-pendant .top-part .presentation2 h5,
+.jewelry-pendant .top-part .presentation3 h5 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  padding-bottom: 15px;
+}
+.jewelry-pendant .top-part .presentation1 a .btn-part p,
+.jewelry-pendant .top-part .presentation2 a .btn-part p,
+.jewelry-pendant .top-part .presentation3 a .btn-part p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;
+}
+.jewelry-pendant .top-part .presentation1 a .btn-part,
+.jewelry-pendant .top-part .presentation2 a .btn-part,
+.jewelry-pendant .top-part .presentation3 a .btn-part {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  width: 125px;
+  height: 41px;
+  background: #333;
+  margin: 0 auto;
+}
+.jewelry-pendant .Demarcation-line {
+  border: 1px solid #d6d6d6;
+  width: 100%;
+  height: 0px;
+}
+.jewelry-pendant .bottom-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-items: center;
+  column-gap: 30px;
+  padding-bottom: 95px;
+  padding-top: 95px;
+}
+.jewelry-pendant .bottom-part .presentation1,
+.jewelry-pendant .bottom-part .presentation2,
+.jewelry-pendant .bottom-part .presentation3 {
+  margin-bottom: 5%;
+}
+.jewelry-pendant .bottom-part .presentation1 a,
+.jewelry-pendant .bottom-part .presentation2 a,
+.jewelry-pendant .bottom-part .presentation3 a {
+  text-decoration: none;
+  width: 100%;
+  width: 350px;
+  height: 439px;
+}
+.jewelry-pendant .bottom-part .presentation1 img,
+.jewelry-pendant .bottom-part .presentation2 img,
+.jewelry-pendant .bottom-part .presentation3 img {
+  width: 100%;
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
+  padding-bottom: 25px;
+}
+.jewelry-pendant .bottom-part .presentation1 p,
+.jewelry-pendant .bottom-part .presentation2 p,
+.jewelry-pendant .bottom-part .presentation3 p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #333;
+  padding-bottom: 10px;
+}
+.jewelry-pendant .bottom-part .presentation1 h5,
+.jewelry-pendant .bottom-part .presentation2 h5,
+.jewelry-pendant .bottom-part .presentation3 h5 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  padding-bottom: 15px;
+}
+.jewelry-pendant .bottom-part .presentation1 a .btn-part p,
+.jewelry-pendant .bottom-part .presentation2 a .btn-part p,
+.jewelry-pendant .bottom-part .presentation3 a .btn-part p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;
+}
+.jewelry-pendant .bottom-part .presentation1 a .btn-part,
+.jewelry-pendant .bottom-part .presentation2 a .btn-part,
+.jewelry-pendant .bottom-part .presentation3 a .btn-part {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  width: 125px;
+  height: 41px;
+  background: #333;
+  margin: 0 auto;
+}
+.jewelry-pendant .show-more {
+  text-align: center;
+  padding-bottom: 150px;
+}
+.jewelry-pendant .show-more button {
+  border: 1px solid #fff;
+  padding: 15px 35px;
+
+  background: #333;
+}
+.jewelry-pendant .show-more button a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  border: none;
+  text-decoration: none;
+}
+
+/*navigation index3.html */
+.navigation {
+  width: 42%;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 51px;
+}
+.navigation .home,
+.navigation .catalog,
+.navigation .Category {
+  display: inline-block;
+}
+.navigation .home a,
+.navigation .catalog a,
+.navigation .Category a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #333;
+  padding-right: 15px;
+}
+.navigation .home a:last-child,
+.navigation .catalog a:last-child,
+.navigation .Category a:last-child {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  text-decoration: none;
+}
+
+.navigation .pendant p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333;
+}
+/*presentation index3.html*/
+.presentation {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
+  padding-bottom: 120px;
+}
+.presentation .block-of-pictures {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.presentation .block-of-pictures .main-picture img {
+  width: 100%;
+}
+.presentation .block-of-pictures .left-card,
+.presentation .block-of-pictures .central-card,
+.presentation .block-of-pictures .right-card,
+.presentation .block-of-pictures .main-picture {
+  padding-bottom: 2%;
+}
+.presentation .description-price {
+  border: 1px solid #d6d6d6;
+  width: 100%;
+  height: 100%;
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+}
+.presentation .description-price .inner-frame {
+  border: 1px solid #d6d6d6;
+  width: 96%;
+  height: 96%;
+  margin: 4%;
+}
+
+.presentation .description-price .inner-frame .left-indent {
+  padding-left: 10%;
+}
+.presentation .description-price .inner-frame .left-indent h3 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  padding-top: 40px;
+}
+.presentation .description-price .inner-frame .left-indent .path {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+.presentation .description-price .inner-frame .left-indent .path p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #979797;
+}
+.presentation .description-price .inner-frame .left-indent .path .path-left {
+  width: 151px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+.presentation .description-price .inner-frame .left-indent .path .path-right {
+  width: 174px;
+  display: flex;
+  justify-content: space-between;
+}
+.description-price .inner-frame .left-indent .line {
+  border: 1px solid #d6d6d6;
+  width: 86%;
+  height: 0px;
+}
+.description-price .inner-frame .left-indent .text {
+  padding-top: 30px;
+  width: 85%;
+}
+.description-price .inner-frame .left-indent .text p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333;
+}
+.description-price .inner-frame .left-indent .price {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #333;
+}
+.description-price .inner-frame .left-indent .bottom-buttons {
+  display: flex;
+}
+.description-price .inner-frame .left-indent .bottom-buttons .left-btn {
+  margin-right: 30px;
+}
+.description-price .inner-frame .left-indent .bottom-buttons .left-btn button {
+  background: transparent;
+  padding: 10px 20px;
+  border: 0;
+  border: 1px solid #fff;
+  width: 110px;
+  height: 41px;
+  background: #333;
+}
+.description-price .inner-frame .left-indent .bottom-buttons .left-btn a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.description-price .inner-frame .left-indent .bottom-buttons .right-btn button {
+  border: 1px solid #333;
+  padding: 10px 20px;
+  background: #f9f9f9;
+  width: 247px;
+  height: 41px;
+}
+.description-price .inner-frame .left-indent .bottom-buttons .right-btn a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+/*additional-option index3.html */
+.additional-option2 {
+  display: grid;
+  grid-template-columns: 48.64% 24.95%;
+  column-gap: 9.27%;
+  justify-content: center;
+}
+.additional-option2 .blurry-text2 h4 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 140%;
+  color: #333;
+  padding-bottom: 30px;
+}
+.additional-option2 .blurry-text2 {
+  width: 540px;
+
+  background: linear-gradient(180deg, rgba(255 255 255) 0%, #f9f9f9 82.29%);
+}
+.additional-option2 .blurry-text2 p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+}
+.additional-option2 .blurry-text2 h5 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+}
+.additional-option2 .blurry-text2 .line-option {
+  border: 1px dashed #333;
+  width: 212px;
+  height: 0px;
+  opacity: 0.5;
+}
+.additional-option2 .personal-approach2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  text-align: center;
+}
+.additional-option2 .personal-approach2 a {
+  text-decoration: none;
+  padding-top: 15px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000;
+}
+.additional-option2 .personal-approach2 .delivery2 {
+  width: 90px;
+  height: 133px;
+}
+.additional-option2 .personal-approach2 .Individual-design2 {
+  width: 127px;
+  height: 133px;
+}
+.additional-option2 .personal-approach2 .Free-fitting2 {
+  width: 90px;
+  height: 133px;
+}
+.additional-option2 .personal-approach2 .Private-an-approach2 {
+  width: 70px;
+  height: 133px;
+}
+
+/*like-it index3.html*/
+.like-it {
+  padding-top: 120px;
+}
+.like-it .prepared p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+}
+.like-it .prepared h5 {
+  padding-top: 15px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+}
+.like-it .top-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+  padding-top: 95px;
+}
+.like-it .top-part .presentation1,
+.like-it .top-part .presentation2,
+.like-it .top-part .presentation3 {
+  margin-bottom: 5%;
+}
+.like-it .top-part .presentation1 a,
+.like-it .top-part .presentation2 a,
+.like-it .top-part .presentation3 a {
+  text-decoration: none;
+  width: 100%;
+  width: 350px;
+  height: 439px;
+}
+.like-it .top-part .presentation1 img,
+.like-it .top-part .presentation2 img,
+.like-it .top-part .presentation3 img {
+  width: 100%;
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
+  padding-bottom: 25px;
+}
+.like-it .top-part .presentation1 p,
+.like-it .top-part .presentation2 p,
+.like-it .top-part .presentation3 p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #333;
+  padding-bottom: 10px;
+}
+.like-it .top-part .presentation1 h5,
+.like-it .top-part .presentation2 h5,
+.like-it .top-part .presentation3 h5 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #333;
+  padding-bottom: 15px;
+}
+.like-it .top-part .presentation1 a .btn-part p,
+.like-it .top-part .presentation2 a .btn-part p,
+.like-it .top-part .presentation3 a .btn-part p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;
+}
+.like-it .top-part .presentation1 a .btn-part,
+.like-it .top-part .presentation2 a .btn-part,
+.like-it .top-part .presentation3 a .btn-part {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  width: 125px;
+  height: 41px;
+  background: #333;
+  margin: 0 auto;
+}
+/*navigation-Contacts index4.html*/
+.navigation-Contacts {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-Contacts .home-Contacts a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #333;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.navigation-Contacts .Contacts {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333;
+}
+/*Contacts index4.html*/
+.Contacts-ind4 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+  padding-top: 60px;
+}
+/*navigation-map index4.html*/
+.navigation-map .hed-contact {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 59px;
+}
+
+.navigation-map .hed-contact .Main-office,
+.navigation-map .hed-contact .Phones,
+.navigation-map .hed-contact .E-mail,
+.navigation-map .hed-contact .Add-addresses {
+  width: 25%;
+}
+.navigation-map .hed-contact .Main-office .location,
+.navigation-map .hed-contact .Phones .Phones-number,
+.navigation-map .hed-contact .E-mail .mail,
+.navigation-map .hed-contact .Add-addresses .addresses {
+  display: flex;
+  padding-top: 25px;
+  width: 100%;
+}
+.navigation-map .hed-contact .Main-office .location .location-icon,
+.navigation-map .hed-contact .Phones .Phones-number .Phones-icon,
+.navigation-map .hed-contact .E-mail .mail .E-mail-icon,
+.navigation-map .hed-contact .Add-addresses .addresses .addresses-icon {
+  padding-right: 10px;
+}
+.navigation-map .hed-contact .Main-office .location h5,
+.navigation-map .hed-contact .Phones .Phones-number h5,
+.navigation-map .hed-contact .E-mail .mail h5,
+.navigation-map .hed-contact .Add-addresses .addresses h5 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333;
+}
+.navigation-map .hed-contact .Main-office .location a,
+.navigation-map .hed-contact .Phones .Phones-number a,
+.navigation-map .hed-contact .E-mail .mail a,
+.navigation-map .hed-contact .Add-addresses .addresses a {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333;
+  padding-bottom: 15px;
+  display: block;
+  text-decoration: none;
+}
+.navigation-map .hed-contact .Phones {
+  width: 141px;
+}
+
+.navigation-map .hed-contact .E-mail {
+  width: 130px;
+}
+
+.navigation-map .hed-contact .Add-addresses {
+  width: 213px;
+}
+.navigation-map .long-line {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #d6d6d6;
+  width: 1110px;
+  height: 0px;
+}
+.navigation-map .contact-maps {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.navigation-map .contact-maps img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1300px) {
+  .container-first header .nav-content {
+    justify-content: center;
+  }
+  .adviсe .adviсe-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+  }
+  .adviсe .adviсe-card .watch,
+  .adviсe .adviсe-card .cufflinks,
+  .adviсe .adviсe-card .rings {
+    margin-bottom: 4%;
+  }
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .presentation {
+    grid-template-columns: 50%;
+    justify-content: center;
+    gap: 5%;
+  }
+  .presentation .block-of-pictures .left-card,
+  .presentation .block-of-pictures .central-card,
+  .presentation .block-of-pictures .right-card,
+  .presentation .block-of-pictures .main-picture {
+    padding-bottom: 2%;
+  }
+  .additional-option2 {
+    grid-template-columns: 80%;
+    justify-items: center;
+  }
+  .additional-option2 .blurry-text2 {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-first .horizontal-line {
+    display: none;
+  }
+  .container-first .brand {
+    display: none;
+  }
+
+  .container-first header .nav-content .right-side .right-elements .heart-user {
+    display: none;
+  }
+  .container-first header .nav-content .right-side .right-elements .login {
+    display: none;
+  }
+
+  .container-first header .nav-content .burger {
+    display: flex;
+  }
+  .container-first header .nav-content .right-side .right-elements {
+    width: 0px;
+  }
+  .container-first
+    header
+    .nav-content
+    .right-side
+    .right-elements
+    .hidden-menu {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 49;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #000;
+    animation: burgerAnimation 0.4s;
+  }
+
+  .container-first header .nav-content .right-side .right-elements .search-bar {
+    display: none;
+  }
+
+  .container-first header .nav-content nav ul {
+    display: none;
+  }
+  .container-first .content {
+    margin-top: 650px;
+  }
+  .container-second .section-selection-btn {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-second .section-selection-btn .Wedding,
+  .container-second .section-selection-btn .husband,
+  .container-second .section-selection-btn .wife,
+  .container-second .section-selection-btn .partner,
+  .container-second .section-selection-btn .collections,
+  .container-second .section-selection-btn .rarity {
+    margin-bottom: 2%;
+  }
+  .container-second .decorations {
+    grid-template-columns: 49% 49%;
+    justify-items: center;
+    row-gap: 1.5%;
+  }
+  .social-networks .social .funny-pictures {
+    display: grid;
+    grid-template-columns: 25% 25%;
+  }
+  .social-networks .social .funny-pictures .pictures4 {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .social-networks .social .funny-pictures .pictures5 {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .social-networks .social .funny-pictures .pictures6 {
+    width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+  .social-networks .social .funny-pictures .pictures1 {
+    width: 100%;
+    position: relative;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .social-networks .social .funny-pictures .pictures2 {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .social-networks .social .funny-pictures .pictures3 {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .social-networks .social .funny-pictures .pictures1 iframe {
+    height: 100%;
+  }
+  .dropdown-menu-block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .dropdown-menu-block .dropdown {
+    padding-bottom: 5%;
+  }
+  .presentation {
+    grid-template-columns: 54%;
+  }
+  .description-price .inner-frame .left-indent .bottom-buttons .left-btn {
+    margin-right: 3%;
+    margin-bottom: 2%;
+  }
+  .navigation-map .hed-contact {
+    justify-content: space-around;
+  }
+  .like-it .top-part {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-second .decorations {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .container-second .decorations {
+    padding-bottom: 5%;
+  }
+  .social-networks .social .funny-pictures {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .presentation {
+    grid-template-columns: 73%;
+  }
+  .description-price .inner-frame .left-indent .bottom-buttons {
+    display: block;
+  }
+  .description-price
+    .inner-frame
+    .left-indent
+    .bottom-buttons
+    .right-btn
+    button {
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-second .beauty-here h3 {
+    font-size: 25px;
+  }
+  .container-second .decorations .rings,
+  .container-second .decorations .earrings,
+  .container-second .decorations .pendants,
+  .container-second .decorations .cufflinks,
+  .container-second .decorations .bracelets,
+  .container-second .decorations .watch {
+    width: 320px;
+  }
+  .salons .content .center-content h5 {
+    font-size: 25px;
+  }
+  .adviсe .best-tips {
+    font-size: 25px;
+  }
+  .navigation {
+    width: 90%;
+  }
+
+  .presentation .description-price .inner-frame .left-indent {
+    padding-left: 5%;
+  }
+
+  .description-price
+    .inner-frame
+    .left-indent
+    .bottom-buttons
+    .right-btn
+    button {
+    width: 80%;
+
+    height: 60px;
+  }
+  .description-price .inner-frame .left-indent .bottom-buttons .right-btn {
+    margin-bottom: 20px;
+  }
+  .additional-option2 .blurry-text2 h5 {
+    font-size: 15px;
+  }
+  .navigation-map .hed-contact .Main-office,
+  .navigation-map .hed-contact .Phones,
+  .navigation-map .hed-contact .E-mail,
+  .navigation-map .hed-contact .Add-addresses {
+    margin: 10%;
+  }
+  .navigation-map .hed-contact {
+    justify-content: start;
+  }
+}
